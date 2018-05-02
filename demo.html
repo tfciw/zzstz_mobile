@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="dist/css/main.css">
+	<script>
+		(function() {
+			var html = document.documentElement;
+			var hWdith = html.getBoundingClientRect().width;
+			html.style.fontSize = hWdith/30 + 'px'; //意味着100% = 30rem；假如设计尺寸size750，那么750/30 = 25px = 1rem;
+			// 在sass设置 @r = 25rem;一个width = 300px的元素应该这样设置 width: 300/@r;
+		})()
+	</script>
+</head>
+<body>
+	<section class="item">
+		<a href="">
+			<img src="dist/img/news_navtor_03.jpg" alt="">
+			<p class="title">中再生联合纽维尔资源回收设备有限公司组建合资公司中再生联合纽维尔资源回收设备有限公司组建合资公司</p>
+			<section class="bot">
+				<span class="time">2018-4-27  14:07</span>
+				<span class="label">中再生动态</span>
+			</section>
+		</a>
+	</section>
+</body>
+</html>
